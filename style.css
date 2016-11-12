@@ -18,7 +18,7 @@ html, body {
  display: flex;
   justify-content: center;
   align-items: center;
-  height: 90%;
+  height: 85%;
 }
 
 .exercise-button {
@@ -34,19 +34,29 @@ html, body {
 }
 
 .nav-menu {
-  height: 10%;
+  height: 15%;
   display: -webkit-flex; /* Safari */
-  display: flex;
+
 }
 
 .nav-menu ul {
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 2em;
 }
 
 .nav-menu li {
-  display: inline;
-  width: 0px;
-  flex-grow: 1;
+  display: inline-block;
+  width: 160px;
+  flex: 0 1 auto; /* auto */
+  text-align: center;
+  padding-top: 7.5%;
+  background-color: rgba(167, 181, 204, 0.8);
+  border-radius: 30px;
 }
 
 body, p, div, a {
