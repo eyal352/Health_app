@@ -12,6 +12,8 @@ body {
 
 html, body {
   height: 100vh;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 #main-link {
@@ -25,12 +27,18 @@ html, body {
   border-radius: 30px;
   text-align: center;
   width: 60%;
-  height: 40%;
-  padding-top: 35px;
+  height: 50%;
+  padding-top: 60px;
+  text-decoration: none;
   margin: 0 auto;
-  font-size: 3em;
+  font-size: 5em;
   color:darkslateblue;
   background-color: rgba(167, 181, 204, 0.8);
+}
+
+.exercise-button span {
+  margin-top: 200px;
+  text-decoration: none;
 }
 
 .nav-menu {
@@ -63,4 +71,24 @@ body, p, div, a {
   border-style: solid;
   border-width: 1px;
 }
+
+/* exercise-pg-1-doctors.html CSS */
+
+label, input {
+  display: inline;
+  vertical-align: middle;
+  margin-left: 10px;
+  font-size: 2em;
+}
+
+.image_header {
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+
+.container {
+  text-align: center;
+}
+
+
 
