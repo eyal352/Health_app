@@ -1,0 +1,56 @@
+body {
+  background-color: whitesmoke;
+  background-image: url('running-girl.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: sans-serif;
+  
+  width: 100%;
+  height: 100%;
+}
+
+html, body {
+  height: 100vh;
+}
+
+#main-link {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.exercise-button {
+  border-radius: 30px;
+  text-align: center;
+  width: 60%;
+  height: 40%;
+  padding-top: 35px;
+  margin: 0 auto;
+  font-size: 3em;
+  color:darkslateblue;
+  background-color: rgba(167, 181, 204, 0.8);
+}
+
+.nav-menu {
+  height: 10%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+}
+
+.nav-menu li {
+  display: inline;
+  width: 0px;
+  flex-grow: 1;
+}
+
+body, p, div, a {
+  border-style: solid;
+  border-width: 1px;
+}
+
