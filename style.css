@@ -72,7 +72,7 @@ body, p, div, a {
   border-width: 1px;
 }
 
-/* exercise-pg-1-doctors.html CSS */
+/****** exercise-pg-1-doctors.html CSS ******/
 
 label, input {
   display: inline;
@@ -90,3 +90,34 @@ label, input {
 .container {
   text-align: center;
 }
+
+/* Benifits of Exercise */
+
+.benifits-of-exercise_content {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.boe-cat {
+  margin-top: 20px;
+}
+
+/* FAQ */
+
+.faq-header {
+  margin-bottom: 20px;
+}
+
+#container-left {
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
