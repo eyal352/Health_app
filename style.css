@@ -1,6 +1,6 @@
 body {
   background-color: whitesmoke;
-  background-image: url('running-girl.png');
+  background-image: url('/resources/running-girl.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
