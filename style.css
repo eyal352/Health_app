@@ -1,6 +1,6 @@
 body {
   background-color: whitesmoke;
-  background-image: url('/resources/running-girl.png'); /* Only on index.html page */
+  background-image: url('resources/running-girl.png'); /* Only on index.html page */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
