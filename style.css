@@ -117,7 +117,18 @@ label, input {
   text-align: left;
 }
 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  .exercise-button {
+  font-size: 2em;
+  }
+  .nav-menu {
+  height: 15%;
+  font-size: 1em;
+  display: -webkit-flex; /* Safari */
+  }
 
+}
 
 
 
