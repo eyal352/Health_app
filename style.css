@@ -4,22 +4,27 @@ body {
   background-repeat: no-repeat;
   background-position: right;
   background-size: 79%;
-  -webkit-background-size: ;
+  -webkit-background-size: 79%;
   font-family: sans-serif;
 
 
   /* width: 100%; */
-  height: 100%;
+  /*height: 100%; */
 }
 
 html, body {
-  height: 95vh;
+  height: 100vh;
   max-width: 860px;
   margin: 0 auto;
 }
 
 a {
 text-decoration: none;
+}
+
+.menu {
+  position: absolute;
+  bottom: 0;
 }
 
 #main-link {
@@ -105,12 +110,17 @@ label, input {
   text-align: center;
 }
 
-/* Benifits of Exercise */
+/* Benefits of Exercise */
 
-.benifits-of-exercise_content {
+.benefits-of-exercise_content {
   margin-top: 40px;
   font-size: 18px;
 }
+
+.benefits-of-exercise_content .row {
+  display: inline-block;
+}
+
   /* Also image in safety.css */
 .boe-cat {
   margin-top: 20px;
