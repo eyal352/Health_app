@@ -38,7 +38,7 @@
           <a href="pages/FAQ.html"><span> FAQ </span></a>
         </li>
         <li>
-          <a href="pages/References.html"><span> References </span></a>
+          <a style="margin-left:-4px;" href="pages/References.html"><span> References </span></a>
         </li>
       </ul>
     </div>
@@ -46,6 +46,10 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>document.body.scrollTop = document.body.scrollHeight - document.body.clientHeight;</script>
+    <script>
+    function Scrolldown() {
+      window.scroll(0,300);
+      }
+      window.onload = Scrolldown;</script>
   </body>
 </html>
