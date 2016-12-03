@@ -3,8 +3,8 @@ body {
   background-image: url('resources/Main-Pic.jpg'); /* Only on index.html page */
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 79%;
-  -webkit-background-size: 79%;
+  background-size: 99%;
+  -webkit-background-size: 99%;
   font-family: sans-serif;
 
 
