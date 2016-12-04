@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prescreen 2</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-image: url('');">
+    <div class="container">
+      <div class="row" style=" font-size:1.5em; margin-top: 30px; margin-bottom:30px;">
+        <div class="col-sm-12" style="display:inline-block;">
+          <span style="margin-right:50px;" id="question-header">Can you swim?</span>
+          <form style="display:inline-block;">
+            <div style="display:inline" class="radio">
+              <label><input type="radio" name="optradio" id="yes">Yes</label>
+            </div>
+            <div style="display:inline" class="radio">
+              <label><input type="radio" name="optradio" id="no"> No </label>
+            </div>
+          </form>
+          <hr>
+          <div style="text-align:left; margin-bottom:30px;">
+            <div style="margin-bottom:15px;">
+              <span  id="question-header">Weeks of Gestation?</span>
+              <div style="display:inline" class="">
+                <label><input type="text" name="gestation"></label>
+              </div>
+            </div>
+
+            <div style="margin-bottom:15px;">
+              <span style="margin-right: 50px;">Height:</span>
+              <input type="text" id="height-inches" />inches
+            </div>
+            <div>
+              <span>Pre-Pregnancy Weight:</span>
+              <input type="text" id="weight-lbs" /><span>lbs</span>
+            </div>
+          </div>
+          <hr>
+          <button type="submit" style="margin-right:20px;"><label>Calculate BMI: </label></button><span id="bmi-output"></span>
+        </div>
+      </div>
+      <a style="visibility: hidden;" class="btn btn-primary" href="">Continue</a>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var heightInches, weightLbs, continueBtn;
+        $('button').click(function() {
+          heightInches = document.getElementById('height-inches').value;
+          weightLbs = $('#weight-lbs').val();
+          continueBtn = $('.btn-primary');
+          var calculation = Math.round((weightLbs / (heightInches ** 2)) * 703);
+          
+          if(calculation >= 25){
+            continueBtn.attr('href', 'Questions-2-high.html');
+            } else {
+              continueBtn.attr('href', 'Questions-2-low.html');
+            }
+
+          var bmi = $('#bmi-output');
+          bmi.text('Your BMI is: ' + calculation);
+
+          continueBtn.css('visibility', 'visible');
+          
+          
+        })
+
+      })
+      // write formula to take weight / height x 2
+      // if the math is 24.9 or link <a> to Questions-2-low.html / if 25 or above, link to Questions-2-high.html
+    </script>
+  </body>
+</html>

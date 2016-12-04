@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prescreen 2</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background-image: url('');">
+    <div class="container">
+      <h1>Suggested Exercise</h1>
+      <div style="margin-top:30px;" class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Age</th>
+            <th>Suggested Target Heart Rate Range (bpm)</th>
+            <th>Target Rating of Perceived Exertion</th>
+            <th>Frequency</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="Exercise-plan-3.html">20-29<a></a></td>
+            <td>102-124</td>
+            <td>12-14 “somewhat hard”</td>
+            <td>3-4 days/week</td>
+            <td>25 min/day progress to 40 min/day</td>
+          </tr>
+          <tr>
+            <td>30-39</td>
+            <td>101-120</td>
+            <td>12-14 “somewhat hard”</td>
+            <td>3-4 days/week</td>
+            <td>25 min/day progress to 40 min/day</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var height, weight;
+        $('button').click(function() {
+          height = $("#height").attr('value')
+          weight = $('#weight').val();
+          var bmi = $('#bmi-output');
+          bmi.innerHTML = height;
+        })
+      })
+    //  if($('#yes').is(':checked')) { alert("Please consult a doctor before you continue"); $('a').attr('href',''); }  });
+    </script>
+  </body>
+</html>
