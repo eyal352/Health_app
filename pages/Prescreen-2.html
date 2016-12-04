@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Health App</title>
+    <title>Prescreen 2</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -17,32 +17,35 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body style="background-color: white; background-image: url('running-girl.png');">
-    <div class="container image_header">
-      <img src="../resources/ClearByDoc.jpg">
-    </div>
+  <body style="background-image: url('');">
     <div class="container">
-      <div class="row">
-        <span id="question-header">Have you been cleared to exercise by your doctor?</span>
+      <div class="img-header">
+        <img class="img-fluid" src="../resources/Prescreening_Question1.png">
+        <hr>
+        <img class="img-fluid" style="position:relative; margin-left: -99px;" src="../resources/Prescreening_Question2.png">
       </div>
-      <form>
-        <div class="radio">
-          <label><input type="radio" name="optradio">Yes</label>
-
+      <div class="row" style=" font-size:1.5em; margin-top: 30px;">
+        <span id="question-header">Have you answered yes to any of the following questions?</span>
+        <div class="col-sm-12" style="display:inline-block;">
+          <form>
+          <div class="radio">
+            <label><input type="radio" name="optradio" id="yes">Yes</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="optradio" id="no"> No </label>
+          </div>
+        </form>
+        <a href="Questions-1.html">Continue</a>
         </div>
-        <div class="radio">
-          <label><input type="radio" name="optradio" id="no"> Not Sure</label>
-        </div>
-      </form>
-    <a href="">Continue</a>
-  </div>
+      </div>
+    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script>
       $('a').click(function() {
-      if($('#no').is(':checked')) { alert("Please consult a doctor before you continue"); }
+      if($('#no').is(':checked')) { alert("Please consult a doctor before you continue"); $('a').attr('href',''); }
       });
     </script>
   </body>
