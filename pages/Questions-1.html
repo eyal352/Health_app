@@ -49,7 +49,7 @@
             </div>
           </div>
           <hr>
-          <input id="calcButton" type="submit" style="margin-right:20px; cursor: pointer;" value="Calculate BMI"></input><span id="bmi-output"></span>
+          <input id="calcButton" type="submit" style="cursor: pointer; margin-right:20px;" value="Calculate BMI"></input><span id="bmi-output"></span>
         </div>
       </div>
       <a style="visibility: hidden;" class="btn btn-primary" href="">Continue</a>
@@ -65,7 +65,7 @@
           heightInches = document.getElementById('height-inches').value;
           weightLbs = $('#weight-lbs').val();
           continueBtn = $('.btn-primary');
-          var calculation = Math.round((weightLbs / (heightInches ** 2)) * 703);
+          var calculation = Math.round((weightLbs / (heightInches * heightInches)) * 703);
           
           if(calculation >= 25){
             continueBtn.attr('href', 'Questions-2-high.html');
